@@ -1,0 +1,144 @@
+{
+  "preamble": {
+    "title": "ariady-putra-emurgo/aiken_minting_validator_v2",
+    "description": "Aiken contracts for project 'ariady-putra-emurgo/aiken_minting_validator_v2'",
+    "version": "0.0.0",
+    "plutusVersion": "v2",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.0.28-alpha+unknown"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "minting.always_true",
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Void"
+        }
+      },
+      "compiledCode": "589801000032323232323232232253330054a22930a9980324811856616c696461746f722072657475726e65642066616c736500136565333333008001153330033370e900018029baa00115333007300637540022930a998020010b0a998020010b0a998020010b0a998020010b0a998020010b0a998020010b24810f5f72656465656d65723a20566f6964005734ae7155ceaab9e5573eae91",
+      "hash": "73132c8415b869527034d19f6ba84e3e5f7447934cc5e6f2448cd731"
+    },
+    {
+      "title": "minting.check_redeemer",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/Int"
+        }
+      },
+      "compiledCode": "5894010000323232322322533300553330053370e004902a0a5115330064911672656465656d6572203d3d203432203f2046616c73650014a02930a9980324811856616c696461746f722072657475726e65642066616c7365001365653333330050011533004002161533004002161533004002161375a0022a660080042c92010d72656465656d65723a20496e74005734ae715d21",
+      "hash": "2a2e4ba9df4e7f72e2b0ff09ae26ae8a5894f42db92378e581c44e92"
+    },
+    {
+      "title": "minting.check_redeemer_2",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/aiken_minting_validator_v2~1types~1Redeemer"
+        }
+      },
+      "compiledCode": "59019301000032323232323232323223232253330063232533300853330083371e6eb8c0340092210d48656c6c6f2c20576f726c64210014a22a660129211e6b6579203d3d202248656c6c6f2c20576f726c642122203f2046616c73650014a02a66601066e1c005205414a22a660129211376616c7565203d3d203432203f2046616c73650014a02940dd69806180680098049baa003149854cc01d24011856616c696461746f722072657475726e65642066616c7365001365653330043370e900018031baa001132533300900115330060041613232533300b001153300800616132533300c300e002149854cc02401c58c94cccccc03c00454cc02401c5854cc02401c5854cc02401c584dd68008a998048038b180600098060011929999998068008a998038028b0a998038028b0a998038028b0a998038028b09bae001300a001300737540022a6600a0062ca66666601400220022a660080042c2a660080042c2a660080042c2a660080042c9211272656465656d65723a2052656465656d6572005734ae7155ceaab9e5573eae855d12ba41",
+      "hash": "62ff09b38bae2e0302ebb48ad85ce6d9e2241909985ef02367675da5"
+    },
+    {
+      "title": "minting.nft",
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Void"
+        }
+      },
+      "parameters": [
+        {
+          "title": "output_reference",
+          "schema": {
+            "$ref": "#/definitions/aiken~1transaction~1OutputReference"
+          }
+        }
+      ],
+      "compiledCode": "59034801000032323232323232323232322232253330073253330083370e900018051baa001132323232533300c3370e90010008a99806a4810a4973204d696e74696e67001533300c323300100100322533301200114a0264a66601e66ebcc01cc048dd5180a8010060a51133003003001301500114a22a6601a9212e636f6e73756d655f7574786f28696e707574732c206f75747075745f7265666572656e636529203f2046616c73650014a02a66601866e1d2001001153300d4910a4973204275726e696e670014a22a6601a9210b496e76616c6964205174790014a064a6660200022a6601a0162c264a666022602800426eb4c04000454cc03803058c048004c94ccc030cdc3a4004601c6ea800452f5bded8c026eacc048c03cdd500099191980080099198008009bab3014301530153015301500522533301300114bd6f7b630099191919299980999b91488100002153330133371e91010000210031005133018337606ea4008dd3000998030030019bab3015003375c6026004602e004602a00244a666024002298103d87a800013232323253330123372200e0042a66602466e3c01c0084cdd2a40006602e6e980052f5c02980103d87a8000133006006003375660280066eb8c048008c058008c050004dd7180898071baa0043758602000260186ea8c004c030dd5001918078008a99804a48137657870656374204d696e7428706f6c6963795f6964293a20536372697074507572706f7365203d20636f6e746578742e707572706f73650016300d300e300a37540022930a998042491856616c696461746f722072657475726e65642066616c73650013656533333300d001153330053370e900018039baa00115333009300837540022930a998030018b0a998030018b0a998030018b0a998030018b0a998030018b0a998030018b24810f5f72656465656d65723a20566f69640049017d657870656374205b50616972285f2c20717479295d203d0a202020206d696e740a2020202020207c3e2076616c75652e66726f6d5f6d696e7465645f76616c756528290a2020202020207c3e2076616c75652e746f6b656e7328706f6c6963795f6964290a2020202020207c3e20646963742e746f5f70616972732829005734ae7155ceaab9e5573eae815d0aba257481",
+      "hash": "0d15126f370d1302fa87a78798c86c1b0ed72d7178af3616b8a4ef56"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "Void": {
+      "title": "Unit",
+      "description": "The nullary constructor.",
+      "anyOf": [
+        {
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        }
+      ]
+    },
+    "aiken/transaction/OutputReference": {
+      "title": "OutputReference",
+      "description": "An `OutputReference` is a unique reference to an output on-chain. The `output_index`\n corresponds to the position in the output list of the transaction (identified by its id)\n that produced that output",
+      "anyOf": [
+        {
+          "title": "OutputReference",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "transaction_id",
+              "$ref": "#/definitions/aiken~1transaction~1TransactionId"
+            },
+            {
+              "title": "output_index",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/TransactionId": {
+      "title": "TransactionId",
+      "description": "A unique transaction identifier, as the hash of a transaction body. Note that the transaction id\n isn't a direct hash of the `Transaction` as visible on-chain. Rather, they correspond to hash\n digests of transaction body as they are serialized on the network.",
+      "anyOf": [
+        {
+          "title": "TransactionId",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "hash",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken_minting_validator_v2/types/Redeemer": {
+      "title": "Redeemer",
+      "anyOf": [
+        {
+          "title": "Redeemer",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "key",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "value",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

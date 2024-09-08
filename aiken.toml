@@ -1,0 +1,16 @@
+name = "ariady-putra-emurgo/aiken_minting_validator_v2"
+version = "0.0.0"
+compiler = "v1.0.28-alpha"
+plutus = "v2"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'ariady-putra-emurgo/aiken_minting_validator_v2'"
+
+[repository]
+user = "ariady-putra-emurgo"
+project = "aiken_minting_validator_v2"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.9.0"
+source = "github"
